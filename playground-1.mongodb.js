@@ -63,16 +63,16 @@ db.getCollection('Papaya').insertMany([
 ])
 
 db.getCollection('Orange').insertMany([
-  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':31,'stop_name':'Music Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':1,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':32,'stop_name':'Dance Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':33,'stop_name':'Bike Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':4,'stop_name':'Solar Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':23,'stop_name':'Plastic Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':24,'stop_name':'Fish Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':25,'stop_name':'Tree Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':34,'stop_name':'Rock Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':35,'stop_name':'Vintage Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':36,'stop_name':'Bird House Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':1,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':31,'stop_name':'Music Bus Stop','location':{'lat':88.30561537640922,'long':-6.3573406316195165,'initial_stop':1,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':32,'stop_name':'Dance Bus Stop','location':{'lat':88.30867001258035,'long':-4.778218879500836,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':33,'stop_name':'Bike Bus Stop','location':{'lat':88.31061977843123,'long':-2.905023636014059,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':4,'stop_name':'Solar Bus Stop','location':{'lat':88.3109225157017,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':23,'stop_name':'Plastic Bus Stop','location':{'lat':88.31001580949109,'long':0.057478160383255546,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':24,'stop_name':'Fish Bus Stop','location':{'lat':88.30852207775621,'long':1.2337045983056836,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':25,'stop_name':'Tree Bus Stop','location':{'lat':88.30554072737579,'long':2.749055943408129,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':34,'stop_name':'Rock Bus Stop','location':{'lat':88.30299059883569,'long':3.723449644153487,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':35,'stop_name':'Vintage Bus Stop','location':{'lat':88.2966138468996,'long':5.613814254292383,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Orange','direction_id':0,'stops':{'stop_id':36,'stop_name':'Bird House Bus Stop','location':{'lat':88.29000766648952,'long':7.153015750179861,'initial_stop':0,'final_stop':1,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
  
  
  

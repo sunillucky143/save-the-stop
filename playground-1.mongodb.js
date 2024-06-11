@@ -9,22 +9,23 @@
 // For more documentation on playgrounds please refer to
 // https://www.mongodb.com/docs/mongodb-vscode/playgrounds/
 
+
 // Select the database to use.
 use('Project_db');
 
 // Insert a few documents into the sales collection.
 db.getCollection('Mango').insertMany([
   {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':1,'stop_name':'Floating Bus Stop','location':{'lat':88.35,'long':-1.82,'initial_stop':1,'final_stop':0,'time_arrival':'0.','time_departure':'06:10a.m.'}}},
-  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':2,'stop_name':'Zebra Bus Stop','location':{'lat':88.29500205913575,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival': 06:20a.m.','time_departure':'06:20a.m.'}}},
-  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':3,'stop_name':'Crab Bus Stop' ,'location':{'lat':88.31236982993475,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival':'06:27a.m.','time_departure':'06:27a.m.'}}},
-  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':4,'stop_name':'Solar Bus Stop','location':{'lat':88.3109225157017,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival':'06:34 a.m.','time_departure':'06:34 a.m.'}}},
-  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':5,'stop_name':'LED Bus Stop','location':{'lat':88.30513325876841,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival': 06:42 a.m.','time_departure':'06:42a.m.'}}},
-  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':6,'stop_name':'Library Bus Stop','location':{'lat':88.31815908686809,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival':'06:48 a.m.','time_departure':'06:48 a.m.'}}},
-  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':7,'stop_name':'Glass House Bus Stop','location':{'lat':88.31671177263453,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival':'06:54 a.m.','time_departure':'06:54 a.m.'}}},
-  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':8,'stop_name':'Invisible Bus Stop','location':{'lat':88.29355474490244,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival':'07:04 a.m.','time_departure':'07:04 a.m.'}}},
-  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':9,'stop_name':'Echo Bus Stop','location':{'lat':88.31381714416813,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival':'07:04 a.m.','time_departure':'07:04 a.m.'}}},
-  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':10,'stop_name':'Space Bus Stop','location':{'lat':88.30947520146827,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival':'07:17 a.m.','time_departure':'07:17 a.m.'}}},
-  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':11,'stop_name':'Galaxy Bus Stop','location':{'lat':88.30079131606904,'long':-1.82,'initial_stop':0,'final_stop':1,'time_arrival':'07:26 a.m.','time_departure':'07:26 a.m.'}}},
+  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':2,'stop_name':'Zebra Bus Stop','location':{'lat':88.295002059135755,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival': 06:20a.m.','time_departure':'06:20a.m.'}}},
+  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':3,'stop_name':'Crab Bus Stop' ,'location':{'lat':88.25737188907075,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival':'06:27a.m.','time_departure':'06:27a.m.'}}},
+  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':4,'stop_name':'Solar Bus Stop','location':{'lat':88.21829440477255,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival':'06:34 a.m.','time_departure':'06:34 a.m.'}}},
+  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':5,'stop_name':'LED Bus Stop','location':{'lat':88.1734276635412,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival': 06:42 a.m.','time_departure':'06:42a.m.'}}},
+  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':6,'stop_name':'Library Bus Stop','location':{'lat':88.14158675040942,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival':'06:48 a.m.','time_departure':'06:48 a.m.'}}},
+  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':7,'stop_name':'Glass House Bus Stop','location':{'lat':88.10829852304414,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival':'06:54 a.m.','time_departure':'06:54 a.m.'}}},
+  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':8,'stop_name':'Invisible Bus Stop','location':{'lat':88.05185326794657,'long':-1.8199999999999994,'initial_stop':0,'final_stop':0,'time_arrival':'07:04 a.m.','time_departure':'07:04 a.m.'}}},
+  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':9,'stop_name':'Echo Bus Stop','location':{'lat':88.0156704121148,'long':-1.8199999999999994,'initial_stop':0,'final_stop':0,'time_arrival':'07:04 a.m.','time_departure':'07:04 a.m.'}}},
+  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':10,'stop_name':'Space Bus Stop','location':{'lat':87.97514561358336,'long':-1.8199999999999994,'initial_stop':0,'final_stop':0,'time_arrival':'07:17 a.m.','time_departure':'07:17 a.m.'}}},
+  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':11,'stop_name':'Galaxy Bus Stop','location':{'lat':87.92593692965224,'long':-1.8199999999999994,'initial_stop':0,'final_stop':1,'time_arrival':'07:26 a.m.','time_departure':'07:26 a.m.'}}},
   
   {'seq_id':1,'route':'Mango','direction_id':1,'stops':{'stop_id':12,'stop_name':'Floating Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':1,'final_stop':0,'time_arrival':'07:41 a.m.','time_departure':'07:41 a.m.'}}},
   {'seq_id':1,'route':'Mango','direction_id':1,'stops':{'stop_id':13,'stop_name':'Zebra Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':1,'time_arrival':'07:32 a.m.','time_departure':'07:32 a.m.'}}},

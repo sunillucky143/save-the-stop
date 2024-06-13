@@ -89,34 +89,34 @@ db.getCollection('Orange').insertMany([
   {'seq_id':1,'route':'Orange','direction_id':1,'stops':{'stop_id':42,'stop_name':'Bird House Bus Stop','location':{'lat':88.21350415551827,'long':6.747145637417199,'initial_stop':01,'final_stop':0,'time_arrival':'0','time_departure':'6:40 a.m.'}}}
  ])
 
+
  db.getCollection('Kiwi').insertMany([
   {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':1,'stop_name':'Floating Bus Stop','location':{'lat':88.35,'long':-1.82,'initial_stop':1,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':43,'stop_name':'Pixel Bus Stop','location':{'lat':88.32618921627505,'long':-3.433065177229634,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':33,'stop_name':'Bike Bus Stop','location':{'lat':88.21908796301301,'long':-3.4330651772296337,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':44,'stop_name':'Piano Bus Stop','location':{'lat':88.15106419404937,'long':-3.4330651772296332,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':45,'stop_name':'Gothic Bus Stop','location':{'lat':88.11053939551815,'long':-3.4330651772296332,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':7,'stop_name':'Glass House Bus Stop','location':{'lat':88.31671177263453,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':8,'stop_name':'Invisible Bus Stop','location':{'lat':88.29355474490244,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':46,'stop_name':'Fold Bus Stop','location':{'lat':88.04708706867905,'long':2.2991100852193624,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':34,'stop_name':'Rock Bus Stop','location':{'lat':88.30299059883569,'long':3.723449644153487,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':35,'stop_name':'Vintage House Bus Stop','location':{'lat':88.2966138468996,'long':5.613814254292383,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':47,'stop_name':'Carvana Bus Stop','location':{'lat':88.33559365769902,'long':5.7260440379794675,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':43,'stop_name':'Pixel Bus Stop','location':{'lat':88.3496900901281,'long':-2.930706882536684,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':33,'stop_name':'Bike Bus Stop','location':{'lat':88.21800741311085,'long':-2.8486441786641703,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':44,'stop_name':'Piano Bus Stop','location':{'lat':88.2179844949006,'long':-2.9307068825366835,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':45,'stop_name':'Gothic Bus Stop','location':{'lat':88.16298655403638,'long':-2.930706882536683,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':7,'stop_name':'Glass House Bus Stop','location':{'lat':88.10829852304414,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':8,'stop_name':'Invisible Bus Stop','location':{'lat':88.05185326794657,'long':-1.8199999999999994,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':46,'stop_name':'Fold Bus Stop','location':{'lat':88.05127310691971,'long':-1.9620017821835052,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':34,'stop_name':'Rock Bus Stop','location':{'lat':88.21540488018111,'long':3.4482589462671127,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':35,'stop_name':'Vintage House Bus Stop','location':{'lat':88.21410439685839,'long':5.261071859794709,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':47,'stop_name':'Carvana Bus Stop','location':{'lat':88.341651564964,'long':4.6540770248954855,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
   {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':48,'stop_name':'Floating Bus Stop','location':{'lat':88.35,'long':-1.82,'initial_stop':0,'final_stop':1,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
  
- 
- 
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':49,'stop_name':'Floating Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':1,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':50,'stop_name':'Pixel Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':39,'stop_name':'Bike Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':51,'stop_name':'Piano Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':52,'stop_name':'Gothic Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':18,'stop_name':'Glass House Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':19,'stop_name':'Invisible Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':53,'stop_name':'Fold Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':40,'stop_name':'Rock Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':41,'stop_name':'Vintage House Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':1,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':54,'stop_name':'Carvana Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':1,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
-  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':55,'stop_name':'Floating Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':1,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}}
+
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':49,'stop_name':'Floating Bus Stop','location':{'lat':88.3486970776304,'long':-1.8145366411563608,'initial_stop':0,'final_stop':1,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':50,'stop_name':'Pixel Bus Stop','location':{'lat':88.28582767075004,'long':-2.2012650068750905,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':39,'stop_name':'Bike Bus Stop','location':{'lat':88.21670503063986,'long':-2.8424297383848227,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':51,'stop_name':'Piano Bus Stop','location':{'lat':88.14109624742339,'long':-2.2012650068750905,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':52,'stop_name':'Gothic Bus Stop','location':{'lat':88.08609830655915,'long':-2.2012650068750905,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':18,'stop_name':'Glass House Bus Stop','location':{'lat':88.10699593080749,'long':-1.8145366411563608,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':19,'stop_name':'Invisible Bus Stop','location':{'lat':88.05055067571006,'long':-1.8145366411563608,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':53,'stop_name':'Fold Bus Stop','location':{'lat':88.03674790076613,'long':3.5298951574166626,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':40,'stop_name':'Rock Bus Stop','location':{'lat':88.21499633912259,'long':3.4498799176474026,'initial_stop':0,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':41,'stop_name':'Vintage House Bus Stop','location':{'lat':88.21410439685839,'long':5.261372733779118,'initial_stop':0,'final_stop':1,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':54,'stop_name':'Carvana Bus Stop','location':{'lat':88.33578115046177,'long':5.330383365520733,'initial_stop':0,'final_stop':1,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}},
+  {'seq_id':1,'route':'Kiwi','direction_id':0,'stops':{'stop_id':55,'stop_name':'Floating Bus Stop','location':{'lat':88.3486970776304,'long':-1.8145366411563608,'initial_stop':1,'final_stop':0,'time_arrival':'4.10 a.m.','time_departure':'4:10 a.m.'}}}
   
  ])
 

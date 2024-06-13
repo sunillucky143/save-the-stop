@@ -42,24 +42,26 @@ db.getCollection('Mango').insertMany([
   
 ]);
 
+
 db.getCollection('Papaya').insertMany([
   {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':1,'stop_name':'Floating Bus Stop','location':{'lat':88.35,'long':-1.82,'initial_stop':1,'final_stop':0,'time_arrival':'0','time_departure':'6:22 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':2,'stop_name':'Zebra Bus Stop','location':{'lat':88.29500205913575,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival':'6:30 a.m.','time_departure':'6:30 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':3,'stop_name':'Crab Bus Stop','location':{'lat':88.31236982993475,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival':'6:36 a.m.','time_departure':'6:36 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':4,'stop_name':'Solar Bus Stop','location':{'lat':88.3109225157017,'long':-1.82,'initial_stop':0,'final_stop':0,'time_arrival':'6:42 a.m.','time_departure':'6:42 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':23,'stop_name':'Plastic Bus Stop','location':{'lat':88.31001580949109,'long':0.057478160383255546,'initial_stop':0,'final_stop':0,'time_arrival':'6:50 a.m.','time_departure':'6:50 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':24,'stop_name':'Fish Bus Stop','location':{'lat':88.30852207775621,'long':1.2337045983056836,'initial_stop':0,'final_stop':0,'time_arrival':'6:55 a.m.','time_departure':'6:55 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':25,'stop_name':'Tree Bus Stop','location':{'lat':88.30554072737579,'long':2.749055943408129,'initial_stop':0,'final_stop':0,'time_arrival':'7:02 a.m.','time_departure':'7:02 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':26,'stop_name':'Rock Bus Stop','location':{'lat':88.30299059883569,'long':3.723449644153487,'initial_stop':0,'final_stop':1,'time_arrival':'7:06 a.m.','time_departure':'7:06 a.m.'}}},
- 
-  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':12,'stop_name':'Floating Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':1,'time_arrival':'7:15 a.m.','time_departure':'7:15 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':13,'stop_name':'Zebra Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'7.07 a.m.','time_departure':'7.07 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':14,'stop_name':'Crab Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'7.01 a.m.','time_departure':'7.01 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':15,'stop_name':'Solar Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'6:55 a.m.','time_departure':'6:55 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':27,'stop_name':'Plastic Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'6:47 a.m.','time_departure':'6:47 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':28,'stop_name':'Fish Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'6:42 a.m.','time_departure':'6:42 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':29,'stop_name':'Tree Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':0,'final_stop':0,'time_arrival':'6:35 a.m.','time_departure':'6:35 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':30,'stop_name':'Rock Bus Stop','location':{'lat':33.42264,'long':-111.748,'initial_stop':1,'final_stop':0,'time_arrival':'0','time_departure':'6:31 a.m.'}}}
+  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':2,'stop_name':'Zebra Bus Stop','location':{'lat':88.29500205913575,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival':'6:30 a.m.','time_departure':'6:30 a.m.'}}},
+  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':3,'stop_name':'Crab Bus Stop','location':{'lat':88.25737188907075,'long':-1.819999999999999,'initial_stop':0,'final_stop':0,'time_arrival':'6:36 a.m.','time_departure':'6:36 a.m.'}}},
+  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':4,'stop_name':'Solar Bus Stop','location':{'lat':88.21829440477255,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival':'6:42 a.m.','time_departure':'6:42 a.m.'}}},
+  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':23,'stop_name':'Plastic Bus Stop','location':{'lat':88.21743484152333,'long':-0.0400354754689092,'initial_stop':0,'final_stop':0,'time_arrival':'6:50 a.m.','time_departure':'6:50 a.m.'}}},
+  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':24,'stop_name':'Fish Bus Stop','location':{'lat':88.21709654979573,'long':1.0764843328676998,'initial_stop':0,'final_stop':0,'time_arrival':'6:55 a.m.','time_departure':'6:55 a.m.'}}},
+  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':25,'stop_name':'Tree Bus Stop','location':{'lat':88.21653228584341,'long':2.518260466874731,'initial_stop':0,'final_stop':0,'time_arrival':'7:02 a.m.','time_departure':'7:02 a.m.'}}},
+  {'seq_id':1,'route':'Papaya','direction_id':0,'stops':{'stop_id':26,'stop_name':'Rock Bus Stop','location':{'lat':88.2162974709084,'long':3.4453699527514834,'initial_stop':0,'final_stop':1,'time_arrival':'7:06 a.m.','time_departure':'7:06 a.m.'}}},
+
+
+  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':12,'stop_name':'Floating Bus Stop','location':{'lat':88.3486970776304,'long':1.8145366411563608,'initial_stop':0,'final_stop':1,'time_arrival':'7:15 a.m.','time_departure':'7:15 a.m.'}}},
+  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':13,'stop_name':'Zebra Bus Stop','location':{'lat':88.29369946689887,'long':1.8145366411563608,'initial_stop':0,'final_stop':0,'time_arrival':'7.07 a.m.','time_departure':'7.07 a.m.'}}},
+  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':14,'stop_name':'Crab Bus Stop','location':{'lat':88.25606929683407,'long':1.8145366411563608,'initial_stop':0,'final_stop':0,'time_arrival':'7.01 a.m.','time_departure':'7.01 a.m.'}}},
+  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':15,'stop_name':'Solar Bus Stop','location':{'lat':88.2169918125358,'long':-1.8145366411563608,'initial_stop':0,'final_stop':0,'time_arrival':'6:55 a.m.','time_departure':'6:55 a.m.'}}},
+  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':27,'stop_name':'Plastic Bus Stop','location':{'lat':88.21613287735067,'long':-0.035871230633999315,'initial_stop':0,'final_stop':0,'time_arrival':'6:47 a.m.','time_departure':'6:47 a.m.'}}},
+  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':28,'stop_name':'Fish Bus Stop','location':{'lat':88.2157948326395,'long':1.0798341492692634,'initial_stop':0,'final_stop':0,'time_arrival':'6:42 a.m.','time_departure':'6:42 a.m.'}}},
+  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':29,'stop_name':'Tree Bus Stop','location':{'lat':88.21523098049752,'long':2.520559177893173,'initial_stop':0,'final_stop':0,'time_arrival':'6:35 a.m.','time_departure':'6:35 a.m.'}}},
+  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':30,'stop_name':'Rock Bus Stop','location':{'lat':88.21499633685825,'long':3.4469930293111823,'initial_stop':1,'final_stop':0,'time_arrival':'0','time_departure':'6:31 a.m.'}}}
 
 ])
 

@@ -1,33 +1,59 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://saitejaalasyam:project123@save-the-stop.7kdmkck.mongodb.net/?retryWrites=true&w=majority&appName=save-the-stop";
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
-const client = new MongoClient(uri, {
-    serverApi: {
-        version: ServerApiVersion.v1,
-        strict: true,
-        deprecationErrors: true,
-    }
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
 });
 
-async function run() {
-    try {
-        // Connect the client to the server (optional starting in v4.7)
-        await client.connect();
-        // Send a ping to confirm a successful connection
-        await client.db("admin").command({ ping: 1 });
-        console.log("Pinged your deployment. You successfully connected to MongoDB!");
-        const connect = client.db("Project_db");
+const uri = "mongodb+srv://saitejaalasyam:project123@save-the-stop.7kdmkck.mongodb.net/?retryWrites=true&w=majority&appName=save-the-stop";
 
-        // Connect to collection
-        const collection = connect.collection("Kiwi");
+const client = new MongoClient(uri, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
+});
 
-        // Find documents
-        const ans = await collection.find({}).toArray();
-        console.log(ans);
-    } finally {
-        // Ensures that the client will close when you finish/error
-        await client.close();
-    }
+async function fetch_data(db, collection, query) {
+  try {
+    await client.connect();
+    await client.db("save-the-stop").command({ ping: 1 });
+    const database = client.db(db);
+    const collec = database.collection(collection);
+    const cursor = collec.find(query);
+    const result = await cursor.toArray();
+    return result;
+  } finally {
+    await client.close();
+  }
 }
 
-run().catch(console.dir);
+async function run() {
+  try {
+    const db = "Project_db";
+
+    const collection = await new Promise(resolve => {
+      readline.question('Enter the collection name: ', collection => {
+        resolve(collection);
+      });
+    });
+
+    const query = await new Promise(resolve => {
+      readline.question('Enter the query: ', query => {
+        resolve(JSON.parse(query)); // Parse the query string into a JavaScript object
+      });
+    });
+
+    readline.close();
+
+    const ans = await fetch_data(db, collection, query); // Await the fetch_data() promise
+    ans.forEach(doc => {
+      console.log(doc);
+    });
+
+  } finally {
+    await client.close();
+  }
+}
+
+run().catch(console.error);

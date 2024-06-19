@@ -16,10 +16,10 @@ use('Project_db');
 // Insert a few documents into the sales collection.
 db.getCollection('Mango').insertMany([
   {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':1,'stop_name':'Floating Bus Stop','location':{'lat':88.35,'long':-1.82,'initial_stop':1,'final_stop':0,'time_arrival':'0.','time_departure':'06:10a.m.'}}},
-  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':2,'stop_name':'Zebra Bus Stop','location':{'lat':88.295002059135755,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival': 06:20a.m.','time_departure':'06:20a.m.'}}},
+  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':2,'stop_name':'Zebra Bus Stop','location':{'lat':88.295002059135755,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival': '06:20a.m.','time_departure':'06:20a.m.'}}},
   {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':3,'stop_name':'Crab Bus Stop' ,'location':{'lat':88.25737188907075,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival':'06:27a.m.','time_departure':'06:27a.m.'}}},
   {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':4,'stop_name':'Solar Bus Stop','location':{'lat':88.21829440477255,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival':'06:34 a.m.','time_departure':'06:34 a.m.'}}},
-  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':5,'stop_name':'LED Bus Stop','location':{'lat':88.1734276635412,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival': 06:42 a.m.','time_departure':'06:42a.m.'}}},
+  {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':5,'stop_name':'LED Bus Stop','location':{'lat':88.1734276635412,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival': '06:42 a.m.','time_departure':'06:42a.m.'}}},
   {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':6,'stop_name':'Library Bus Stop','location':{'lat':88.14158675040942,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival':'06:48 a.m.','time_departure':'06:48 a.m.'}}},
   {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':7,'stop_name':'Glass House Bus Stop','location':{'lat':88.10829852304414,'long':-1.8199999999999996,'initial_stop':0,'final_stop':0,'time_arrival':'06:54 a.m.','time_departure':'06:54 a.m.'}}},
   {'seq_id':1,'route':'Mango','direction_id':0,'stops':{'stop_id':8,'stop_name':'Invisible Bus Stop','location':{'lat':88.05185326794657,'long':-1.8199999999999994,'initial_stop':0,'final_stop':0,'time_arrival':'07:04 a.m.','time_departure':'07:04 a.m.'}}},
@@ -61,7 +61,7 @@ db.getCollection('Papaya').insertMany([
   {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':27,'stop_name':'Plastic Bus Stop','location':{'lat':88.21613287735067,'long':-0.035871230633999315,'initial_stop':0,'final_stop':0,'time_arrival':'6:47 a.m.','time_departure':'6:47 a.m.'}}},
   {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':28,'stop_name':'Fish Bus Stop','location':{'lat':88.2157948326395,'long':1.0798341492692634,'initial_stop':0,'final_stop':0,'time_arrival':'6:42 a.m.','time_departure':'6:42 a.m.'}}},
   {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':29,'stop_name':'Tree Bus Stop','location':{'lat':88.21523098049752,'long':2.520559177893173,'initial_stop':0,'final_stop':0,'time_arrival':'6:35 a.m.','time_departure':'6:35 a.m.'}}},
-  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':30,'stop_name':'Rock Bus Stop','location':{'lat':88.21499633685825,'long':3.4469930293111823,'initial_stop':1,'final_stop':0,'time_arrival':'0','time_departure':'6:31 a.m'}}}
+  {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':30,'stop_name':'Rock Bus Stop','location':{'lat':88.21499633685825,'long':3.4469930293111823,'initial_stop':1,'final_stop':0,'time_arrival':'0','time_departure':'6:31 a.m.'}}}
 
 ])
 

@@ -11,20 +11,15 @@ async function fetch()
     try{
         for(const collec of collections) {
             const query = {"route": collec};
-            console.log(collec);
             const ans = await myConnection.fetchData(undefined, collec, query);
             result.push(ans);
         }
+        return result;
     }
     catch (error) {
         console.log("Error Fetching Data",error);
     }
 }
-
-(async ()=> {
-    const res = await fetch();
-    console.log(res);
-})();
 
 module.exports={fetch};
 

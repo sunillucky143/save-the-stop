@@ -40,8 +40,9 @@ class SST {
         }
     }
 }
+module.exports={SST};
 
-export {SST};
+// export {SST};
 
 /*(async () => {
     const myConnection = new SST();

@@ -44,13 +44,13 @@ function loc(data) {
                 {
                     let idx=myMap.get(stop.stop_name);
                     let temp=ll[idx];
-                    temp.push([stop.stop_id,stop.stop_name,data[i].route,data[i].direction_id]);
+                    temp.push([stop.stop_id,stop.stop_name,data[i][j].route,data[i][j].direction_id]);
                     ll[idx]=temp;
                 }
                 else {
                     myMap.set(stop.stop_name,count);
                     count++;
-                    ll.push([stop.stop_id, stop.stop_name, data[i].route, data[i].direction_id]);
+                    ll.push([stop.stop_id, stop.stop_name, data[i][j].route, data[i][j].direction_id]);
                 }
             }
         }
@@ -65,8 +65,38 @@ function loc(data) {
 
 (async ()=>
 {
-    const res=await fetch();
-    loc(res);
+    const query=[
+
+        {
+            $geoNear: {
+                near: { type: "Point", coordinates: [-1.97, 84.32] },
+                distanceField: "distance",
+                spherical: true,
+                key: "stops.location"
+            }
+        },{
+            $unwind: "$stops"
+        },
+
+        {
+            $project: {
+                _id: 0,
+                stop_id: "$stops.stop_id",
+                stop_name: "$stops.stop_name",
+                latitude: "$stops.location.coordinates[0]",
+                longitude: "$stops.location.coordinates[1]",
+                distance: 1
+            }
+        },
+        {
+            $sort: { distance: 1 }
+        },
+        {
+            $limit: 3
+        }
+    ];
+    const res=await fetch(query);
+
 })();
 
 

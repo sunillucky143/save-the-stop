@@ -10,7 +10,7 @@ class SST {
                 deprecationErrors: true,
             }
         });
-        this.db = "Project_db";
+        this.dbName = "Project_db";
     }
 
     async connect() {
@@ -19,6 +19,7 @@ class SST {
             return this.client;
         } catch (error) {
             console.error("Connection failed", error);
+            throw error; // Ensure the error is propagated to the caller
         }
     }
 
@@ -26,13 +27,30 @@ class SST {
         let client;
         try {
             client = await this.connect();
-            const database = client.db(db || this.db);
+            const database = client.db(db || this.dbName);
             const collec = database.collection(collection);
-            const cursor = collec.find(query);
+
+            // Ensure query is an aggregation pipeline with $geoNear as the first stage
+            const pipeline = [
+                {
+                    $geoNear: {
+                        near: {
+                            type: "Point",
+                            coordinates: query.coordinates // Assuming query.coordinates is an array [longitude, latitude]
+                        },
+                        distanceField: "distance",
+                        spherical: true,
+                        maxDistance: 2000  // Maximum distance in meters
+                    }
+                }
+            ];
+
+            const cursor = await collec.aggregate(pipeline);
             const result = await cursor.toArray();
             return result;
         } catch (error) {
             console.error("Fetch failed", error);
+            throw error; // Ensure the error is propagated to the caller
         } finally {
             if (client) {
                 await client.close();
@@ -40,18 +58,5 @@ class SST {
         }
     }
 }
-module.exports={SST};
 
-// export {SST};
-
-/*(async () => {
-    const myConnection = new SST();
-    const collection = "Kiwi";
-    const query = { "route": collection };
-    try {
-        const ans = await myConnection.fetchData(undefined, collection, query);
-        console.log(ans);
-    } catch (error) {
-        console.error("Error fetching data", error);
-    }
-})();*/
+module.exports = { SST };

@@ -1,16 +1,16 @@
 const { fetch } = require('./fetch.js'); // Adjust the path as per your file structure
 
-async function runSample() {
+async function getNearbyBusStops() {
 
 
     // Coordinates for the geospatial query
-    const longitude = -1.8199999999999996;  // Example longitude
+    const longitude = -1.82;  // Example longitude
     const latitude = 88.21829440477250;   // Example latitude
 
     // Collection and query definition
-    const collection = "Mango";  // Replace with your actual collection name
+    const collections = ["Mango","Papaya","Orange","Kiwi"];  // Replace with your actual collection name
     const user_loc = {
-        coordinates: [longitude, latitude]
+        coordinates: [latitude, longitude]
     };
     const pipeline = [
         {
@@ -21,20 +21,22 @@ async function runSample() {
                 },
                 distanceField: "distance",
                 spherical: true,
-                maxDistance: 2000  // Maximum distance in meters
+                maxDistance: 1000
             }
         }
     ];
 
 
-    try {
-        // Connect to MongoDB
-
-        // Fetch data using the SST class
-        const result = await fetch(collection, pipeline);
-        console.log("Query result:", result);
-    } catch (error) {
-        console.error("Error fetching data:", error);
-    }
+        try {
+            // Connect to MongoDB
+            for(let collection of collections) {
+                console.log(collection);
+                // Fetch data using the SST class
+                const result = await fetch(collection, pipeline);
+                console.log("Query result:", result);
+            }
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
 }
-runSample();
+getNearbyBusStops();

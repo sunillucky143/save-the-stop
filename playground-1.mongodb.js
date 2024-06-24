@@ -21,28 +21,28 @@ use('Project_db');
 
 // Insert documents into the Mango collection
 db.Mango.insertMany([
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 1, 'stop_name': 'Floating Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.82, 88.35], 'initial_stop': 1, 'final_stop': 0, 'time_arrival': '0', 'time_departure': '06:10 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 2, 'stop_name': 'Zebra Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.82, 88.29500205913575], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:20 a.m.', 'time_departure': '06:20 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 3, 'stop_name': 'Crab Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.82, 88.25737188907075], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:27 a.m.', 'time_departure': '06:27 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 4, 'stop_name': 'Solar Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.82, 88.21829440477255], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:34 a.m.', 'time_departure': '06:34 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 5, 'stop_name': 'LED Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.82, 88.1734276635412], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:42 a.m.', 'time_departure': '06:42 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 6, 'stop_name': 'Library Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.82, 88.14158675040942], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:48 a.m.', 'time_departure': '06:48 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 7, 'stop_name': 'Glass House Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.82, 88.10829852304414], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:54 a.m.', 'time_departure': '06:54 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 8, 'stop_name': 'Invisible Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.82, 88.05185326794657], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:04 a.m.', 'time_departure': '07:04 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 9, 'stop_name': 'Echo Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.82, 88.0156704121148], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:10 a.m.', 'time_departure': '07:10 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 10, 'stop_name': 'Space Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.82, 87.97514561358336], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:17 a.m.', 'time_departure': '07:17 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 11, 'stop_name': 'Galaxy Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.82, 87.92593692965224], 'initial_stop': 0, 'final_stop': 1, 'time_arrival': '07:26 a.m.', 'time_departure': '0'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 12, 'stop_name': 'Floating Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.8145366411563608, 88.3486970776304], 'initial_stop': 1, 'final_stop': 0, 'time_arrival': '07:41 a.m.', 'time_departure': '0'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 13, 'stop_name': 'Zebra Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.8145366411563608, 88.29369946689887], 'initial_stop': 0, 'final_stop': 1, 'time_arrival': '07:32 a.m.', 'time_departure': '07:32 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 14, 'stop_name': 'Crab Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.8145366411563608, 88.25606929683407], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:23 a.m.', 'time_departure': '07:23 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 15, 'stop_name': 'Solar Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.8145366411563608, 88.2169918125358], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:17 a.m.', 'time_departure': '07:17 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 16, 'stop_name': 'LED Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.8145366411563608, 88.1721250713045], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:11 a.m.', 'time_departure': '07:11 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 17, 'stop_name': 'Library Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.8145366411563608, 88.14028415817252], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:04 a.m.', 'time_departure': '07:04 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 18, 'stop_name': 'Glass House Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.8145366411563608, 88.10699593080749], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:59 a.m.', 'time_departure': '06:59 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 19, 'stop_name': 'Invisible Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.8145366411563608, 88.05055067570992], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:50 a.m.', 'time_departure': '06:50 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 20, 'stop_name': 'Echo Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.8145366411563608, 88.01436781987815], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:42 a.m.', 'time_departure': '06:42 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 21, 'stop_name': 'Space Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.8145366411563608, 87.97384302134672], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:35 a.m.', 'time_departure': '06:35 a.m.'}}},
-    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 22, 'stop_name': 'Galaxy Bus Stop', 'location': {'type': 'Point', 'coordinates': [-1.8145366411563608, 87.9246343374156], 'initial_stop': 0, 'final_stop': 1, 'time_arrival': '06:26 a.m.', 'time_departure': '0'}}}
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 1, 'stop_name': 'Floating Bus Stop', 'location': {'type': 'Point', 'coordinates': [ 88.35,-1.82], 'initial_stop': 1, 'final_stop': 0, 'time_arrival': '0', 'time_departure': '06:10 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 2, 'stop_name': 'Zebra Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.29500205913575,-1.82], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:20 a.m.', 'time_departure': '06:20 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 3, 'stop_name': 'Crab Bus Stop', 'location': {'type': 'Point', 'coordinates': [ 88.25737188907075,-1.82], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:27 a.m.', 'time_departure': '06:27 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 4, 'stop_name': 'Solar Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.21829440477255,-1.82], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:34 a.m.', 'time_departure': '06:34 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 5, 'stop_name': 'LED Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.1734276635412,-1.82 ], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:42 a.m.', 'time_departure': '06:42 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 6, 'stop_name': 'Library Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.14158675040942,-1.82], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:48 a.m.', 'time_departure': '06:48 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 7, 'stop_name': 'Glass House Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.10829852304414,-1.82 ], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:54 a.m.', 'time_departure': '06:54 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 8, 'stop_name': 'Invisible Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.05185326794657,-1.82], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:04 a.m.', 'time_departure': '07:04 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 9, 'stop_name': 'Echo Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.0156704121148,-1.82], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:10 a.m.', 'time_departure': '07:10 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 10, 'stop_name': 'Space Bus Stop', 'location': {'type': 'Point', 'coordinates': [87.97514561358336,-1.82], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:17 a.m.', 'time_departure': '07:17 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 11, 'stop_name': 'Galaxy Bus Stop', 'location': {'type': 'Point', 'coordinates': [87.92593692965224,-1.82], 'initial_stop': 0, 'final_stop': 1, 'time_arrival': '07:26 a.m.', 'time_departure': '0'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 12, 'stop_name': 'Floating Bus Stop', 'location': {'type': 'Point', 'coordinates': [ 88.3486970776304,-1.8145366411563608], 'initial_stop': 1, 'final_stop': 0, 'time_arrival': '07:41 a.m.', 'time_departure': '0'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 13, 'stop_name': 'Zebra Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.29369946689887,-1.8145366411563608], 'initial_stop': 0, 'final_stop': 1, 'time_arrival': '07:32 a.m.', 'time_departure': '07:32 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 14, 'stop_name': 'Crab Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.25606929683407,-1.8145366411563608], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:23 a.m.', 'time_departure': '07:23 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 15, 'stop_name': 'Solar Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.2169918125358,-1.8145366411563608], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:17 a.m.', 'time_departure': '07:17 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 16, 'stop_name': 'LED Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.1721250713045,-1.8145366411563608], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:11 a.m.', 'time_departure': '07:11 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 17, 'stop_name': 'Library Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.14028415817252,-1.8145366411563608], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '07:04 a.m.', 'time_departure': '07:04 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 18, 'stop_name': 'Glass House Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.10699593080749,-1.8145366411563608], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:59 a.m.', 'time_departure': '06:59 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 19, 'stop_name': 'Invisible Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.05055067570992,-1.8145366411563608], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:50 a.m.', 'time_departure': '06:50 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 20, 'stop_name': 'Echo Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.01436781987815,-1.8145366411563608], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:42 a.m.', 'time_departure': '06:42 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 21, 'stop_name': 'Space Bus Stop', 'location': {'type': 'Point', 'coordinates': [87.97384302134672,-1.8145366411563608], 'initial_stop': 0, 'final_stop': 0, 'time_arrival': '06:35 a.m.', 'time_departure': '06:35 a.m.'}}},
+    {'seq_id': 1, 'route': 'Mango', 'direction_id': 1, 'stops': {'stop_id': 22, 'stop_name': 'Galaxy Bus Stop', 'location': {'type': 'Point', 'coordinates': [87.9246343374156,-1.8145366411563608], 'initial_stop': 0, 'final_stop': 1, 'time_arrival': '06:26 a.m.', 'time_departure': '0'}}}
 ]);
 
 // Ensure a 2dsphere index is created on the location field
@@ -70,7 +70,7 @@ db.getCollection('Papaya').insertMany([
     {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':29,'stop_name':'Tree Bus Stop','location':{'type': 'Point', 'coordinates': [88.21523098049752, 2.520559177893173]},'initial_stop':0,'final_stop':0,'time_arrival':'6:35 a.m.','time_departure':'6:35 a.m.'}},
     {'seq_id':1,'route':'Papaya','direction_id':1,'stops':{'stop_id':30,'stop_name':'Rock Bus Stop','location':{'type': 'Point', 'coordinates': [88.21499633685825, 3.4469930293111823]},'initial_stop':1,'final_stop':0,'time_arrival':'0','time_departure':'6:31 a.m.'}}
 ]);
-db.getCollection('Papaya').createIndex({'stops.location': '2dsphere'});
+db.Papaya.createIndex({'stops.location': '2dsphere'});
 
 // Insert documents into the 'Orange' collection.
 // Create a 2dsphere index on the location field.
@@ -420,7 +420,7 @@ db.getCollection('Orange').insertMany([
 ]);
 
 // Ensure a 2dsphere index is created on the 'location' field
-db.getCollection('Orange').createIndex({'stops.location': '2dsphere'});
+db.Orange.createIndex({'stops.location': '2dsphere'});
 /* global use, db */
 // MongoDB Playground
 // To disable this template go to Settings | MongoDB | Use Default Template For Playground.
@@ -463,5 +463,5 @@ db.getCollection('Kiwi').insertMany([
 ]);
 
 // Create the 2dsphere index on the location field
-db.getCollection('Kiwi').createIndex({'stops.location':'2dsphere'});
+db.Kiwi.createIndex({'stops.location': '2dsphere'});
 

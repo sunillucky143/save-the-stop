@@ -2,8 +2,8 @@ const {SST}=require('./class.js');
 
 
 var instance=new SST();
-const collections=["Mango","Kiwi","Papaya","Orange"];
-let allResults=[];
+
+
 
 async function fetch(collection,pipeline)
 {
@@ -13,13 +13,9 @@ async function fetch(collection,pipeline)
         client = await myConnection.connect();
         const database = client.db(myConnection.dbName);
         const collec = database.collection(collection);
-
-        // Ensure query is an aggregation pipeline with $geoNear as the first stage
-
-
         const cursor = await collec.aggregate(pipeline);
-        const result = await cursor.toArray();
-        return result;
+
+        return await cursor.toArray();
     } catch (error) {
         console.error("Fetch failed", error);
         throw error; // Ensure the error is propagated to the caller

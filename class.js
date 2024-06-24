@@ -23,40 +23,24 @@ class SST {
         }
     }
 
-    async fetchData(db, collection, query) {
-        let client;
+    async fetch()
+    {
         try {
-            client = await this.connect();
-            const database = client.db(db || this.dbName);
-            const collec = database.collection(collection);
-
-            // Ensure query is an aggregation pipeline with $geoNear as the first stage
-            const pipeline = [
-                {
-                    $geoNear: {
-                        near: {
-                            type: "Point",
-                            coordinates: query.coordinates // Assuming query.coordinates is an array [longitude, latitude]
-                        },
-                        distanceField: "distance",
-                        spherical: true,
-                        maxDistance: 2000  // Maximum distance in meters
-                    }
-                }
-            ];
-
-            const cursor = await collec.aggregate(pipeline);
+            const client=this.client;
+            await client.connect();
+            const database = client.db(this.dbName);
+            const collec = database.collection("Orange");
+            const cursor = collec.find({"route":"Orange"});
             const result = await cursor.toArray();
+            console.log(result);
             return result;
-        } catch (error) {
-            console.error("Fetch failed", error);
-            throw error; // Ensure the error is propagated to the caller
-        } finally {
-            if (client) {
-                await client.close();
-            }
+        }
+        catch (e) {
+            console.log(e);
         }
     }
+
+
 }
 
 module.exports = { SST };

@@ -1,34 +1,33 @@
 const {SST}=require('./class.js');
 
-console.log(SST);
+
 var instance=new SST();
 const collections=["Mango","Kiwi","Papaya","Orange"];
 let allResults=[];
 
-async function fetch( query)
+async function fetch(collection,pipeline)
 {
     const myConnection=new SST();
-    try{
-        for(const collec of collections) {
+    let client;
+    try {
+        client = await myConnection.connect();
+        const database = client.db(myConnection.dbName);
+        const collec = database.collection(collection);
 
-            let db=myConnection.db;
-            const client=myConnection.client;
-            const collection = client.db("db").collection(collec);
-            const ans = await collection.aggregate(query).toArray();
-            allResults = allResults.concat(ans);
-            console.log(ans);
+        // Ensure query is an aggregation pipeline with $geoNear as the first stage
+
+
+        const cursor = await collec.aggregate(pipeline);
+        const result = await cursor.toArray();
+        return result;
+    } catch (error) {
+        console.error("Fetch failed", error);
+        throw error; // Ensure the error is propagated to the caller
+    } finally {
+        if (client) {
+            await client.close();
         }
-
-        // Sort all combined results and get the top 3
-        allResults.sort((a, b) => a.distance - b.distance);
-        const topResults = allResults.slice(0, 3);
-
-        return topResults;
-    }
-    catch (error) {
-        console.log("Error Fetching Data",error);
-    }
-}
+}}
 
 module.exports={fetch};
 

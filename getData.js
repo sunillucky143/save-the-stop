@@ -21,7 +21,7 @@ async function getNearbyBusStops() {
                 },
                 distanceField: "distance",
                 spherical: true,
-                maxDistance: 1
+                maxDistance: 1000
             }
         }
     ];

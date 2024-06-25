@@ -30,13 +30,16 @@ async function getNearbyBusStops() {
         try {
             // Connect to MongoDB
             for(let collection of collections) {
-                console.log(collection);
+
                 // Fetch data using the SST class
-                const result = await fetch(collection, pipeline);
-                console.log("Query result:", result);
+                const result=await fetch(collection, pipeline);
+                console.log(result);
             }
+
         } catch (error) {
             console.error("Error fetching data:", error);
         }
 }
 getNearbyBusStops();
+
+module.exports={getNearbyBusStops};

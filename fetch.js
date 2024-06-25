@@ -25,5 +25,27 @@ async function fetch(collection,pipeline)
         }
 }}
 
-module.exports={fetch};
+async function findStops(collection,pipeline,filter)
+{
+    const myConnection=new SST();
+    let client;
+    try {
+        client = await myConnection.connect();
+        const database = client.db(myConnection.dbName);
+        const collec = database.collection(collection);
+        const cursor = await collec.find(pipeline).sort(filter);
+
+        return await cursor.toArray();
+    } catch (error) {
+        console.error("Fetch failed", error);
+        throw error; // Ensure the error is propagated to the caller
+    } finally {
+        if (client) {
+            await client.close();
+        }
+    }}
+
+
+module.exports={fetch,findStops};
+
 

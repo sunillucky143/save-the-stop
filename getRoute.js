@@ -1,5 +1,5 @@
 var {findStops}= require('./fetch.js');
-var {fetch}=require('./fetch.js');
+
 async function showStops(route,direction)
 {
 

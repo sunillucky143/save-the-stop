@@ -22,8 +22,8 @@ use('Project_db');
 // Insert documents into the Mango collection
 db.Mango.insertMany([
     {'route_seq':1,'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 1, 'stop_name': 'Floating Bus Stop', 'location': {'type': 'Point', 'coordinates': [ 88.35,-1.82]}, 'stop': 1, 'time' : '06:10'}},
-    {'route_seq':2,'seq_id': 2, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 2, 'stop_name': 'Zebra Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.29500205913575,-1.82]}, 'stop': 0, 'time' : '06:20'}},
-    {'route_seq':3,'seq_id': 3, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 3, 'stop_name': 'Crab Bus Stop', 'location': {'type': 'Point', 'coordinates': [ 88.25737188907075,-1.82]}, 'stop': 0, 'time' : '06:27'}},
+    {'route_seq':2,'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 2, 'stop_name': 'Zebra Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.29500205913575,-1.82]}, 'stop': 0, 'time' : '06:20'}},
+    {'route_seq':3,'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 3, 'stop_name': 'Crab Bus Stop', 'location': {'type': 'Point', 'coordinates': [ 88.25737188907075,-1.82]}, 'stop': 0, 'time' : '06:27'}},
     {'route_seq':4,'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 4, 'stop_name': 'Solar Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.21829440477255,-1.82]}, 'stop': 0, 'time' : '06:34'}},
     {'route_seq':5,'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 5, 'stop_name': 'LED Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.1734276635412,-1.82 ]}, 'stop': 0, 'time' : '06:42'}},
     {'route_seq':6,'seq_id': 1, 'route': 'Mango', 'direction_id': 0, 'stops': {'stop_id': 6, 'stop_name': 'Library Bus Stop', 'location': {'type': 'Point', 'coordinates': [88.14158675040942,-1.82]}, 'stop': 0, 'time' : '06:48'}},

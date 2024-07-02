@@ -30,10 +30,10 @@ function bus(data,time,route_seq) {
     const endTotalMinutes = endHour * 60 + endMinute;
 
     const differenceInMinutes = startTotalMinutes-endTotalMinutes;
-    const seq_id=differenceInMinutes/30;
+    const seq_id=Math.ceil(differenceInMinutes/30);
     console.log(seq_id);
-    return differenceInMinutes;
+    return seq_id;
 
 
 }
-nearestBus("Mango", 0,"09:53",88.21,-1.82,4);
+nearestBus("Mango", 0,"07:20",88.21,-1.82,4);

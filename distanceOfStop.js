@@ -31,7 +31,8 @@ async function distance(route,direction,lat,long,id) {
                 direction_id:direction,
                 'stops.stop_id':id
             }
-        }
+        },
+        { $sort: { route_seq: 1 } }
 
     ];
 
@@ -41,6 +42,7 @@ async function distance(route,direction,lat,long,id) {
 
 
             // Fetch data using the SST class
+            const filter={'route_seq':1}
             const result=await fetch(collection, pipeline);
             return result;
 

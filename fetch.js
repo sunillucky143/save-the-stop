@@ -13,7 +13,7 @@ async function fetch(collection,pipeline)
         client = await myConnection.connect();
         const database = client.db(myConnection.dbName);
         const collec = database.collection(collection);
-        const cursor = await collec.aggregate(pipeline);
+        const cursor = await collec.aggregate(pipeline).sort({'route_seq':1});
 
         return await cursor.toArray();
     } catch (error) {
